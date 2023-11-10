@@ -5,7 +5,7 @@ public class Board {
     private static final int PLAYER_X = 1;
     private static final int PLAYER_O = 2;
 
-    private int[][] board;
+    private final int[][] board;
 
     public Board() {
         // Initialize the board with empty cells

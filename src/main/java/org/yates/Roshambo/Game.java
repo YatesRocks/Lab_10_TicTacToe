@@ -6,7 +6,7 @@ public class Game {
     private static final int PLAYER_X = 1;
     private static final int PLAYER_O = 2;
 
-    private Board board;
+    private final Board board;
     private int currentPlayer;
 
     public Game() {
@@ -72,9 +72,7 @@ public class Game {
                 System.out.println("It's a tie!!!!");
                 return true;
             }
-            default -> {
-                throw new RuntimeException();
-            }
+            default -> throw new RuntimeException();
         }
     }
 }
